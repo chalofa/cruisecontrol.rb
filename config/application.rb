@@ -57,6 +57,9 @@ module CruiseControl
     end
 
     config.action_view.javascript_expansions[:defaults] = ['rails', 'jquery', 'jquery_ujs']
+
+    # Use a custom timezone
+    config.time_zone = ENV['CC_TIMEZONE'] || 'Mexico City'
   end
 end
 
