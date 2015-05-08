@@ -75,7 +75,7 @@ module BuildsHelper
 
   def format_build_script(script)
     if script.blank?
-      "This project has no `build.sh` or `script/build` scripts. Maybe it doesn't need it."
+      "This project has no `build.sh` or `bin/build` scripts. Maybe it doesn't need it."
     else
       script.html_safe
     end
